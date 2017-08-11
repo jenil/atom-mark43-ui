@@ -1,0 +1,17 @@
+{
+  "name": "mark43-ui",
+  "theme": "ui",
+  "version": "0.1.0",
+  "description": "Mark43 CAD-style theme for Atom",
+  "keywords": [
+    "ui",
+    "mark43",
+    "atom",
+    "theme"
+  ],
+  "repository": "https://github.com/jenil/atom-mark43-ui",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

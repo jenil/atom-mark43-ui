@@ -1,0 +1,67 @@
+// List Group -------------------
+
+.list-group {
+  background: #4D4D4D;
+  border-radius: 3px;
+  border: 2px solid @primary;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.50);
+
+  li {
+    padding-left: @component-padding/2;
+    border-bottom: 1px solid rgba(55, 55, 55, 0.5);
+    box-shadow: 0 1px 0 0 rgba(106, 106, 106, 1);
+    // We want to highlight the background of the list items because we dont know their size.
+    &.selected {
+      color: @text-color-selected;
+      background-color: @background-color-selected;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+// List Tree -------------------
+
+.list-tree {
+  .selected {
+    color: @text-color-selected;
+  }
+}
+// Select List -------------------
+
+.select-list {
+  li {
+    padding: @component-padding/2 @component-padding;
+  }
+
+  .status {
+    float: right;
+  }
+
+  .error-message {
+    color: @text-color-error;
+  }
+
+  .loading-message {
+    color: @text-color-highlight;
+  }
+}
+// Popover List -------------------
+// Used as a popover for something like autocomplete.
+
+.select-list.popover-list {
+  @popover-list-padding: @component-padding/2;
+  padding: @popover-list-padding;
+  border-radius: @component-border-radius;
+  background-color: @overlay-background-color;
+  box-shadow: 0 2px 8px 1px hsla(0,0%,0%,.3);
+
+  .list-group {
+    margin-top: @popover-list-padding;
+
+    li {
+      padding-left: @popover-list-padding;
+    }
+  }
+}
